@@ -1,5 +1,5 @@
 #Add import statement for add and mul from calculator im math_operations package
-
+from math_operations.calculator import add, mul
 def main():
     print(add(5,5)) # function add from lib.calculator calc
     print(mul(5,5)) # function mul from lib.calculator calc

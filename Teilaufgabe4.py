@@ -1,4 +1,6 @@
 # Add import statement for add as addition and mul as multiplication from calc
+from calc import add as addition, mul as multiplication
+
 
 def add(num1, num2):
     '''
