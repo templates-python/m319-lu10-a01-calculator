@@ -1,4 +1,4 @@
-# Add import statement for calc
+# Add import statement for calc as c
 
 def main():
     print(c.add(5, 5))
