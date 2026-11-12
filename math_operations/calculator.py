@@ -1,3 +1,6 @@
+"""Basic arithmetic functions for the calculator exercise."""
+
+
 import math
 
 
@@ -60,6 +63,9 @@ def sqrt(num1):
 
 
 def main():
+    """
+    Demonstrates the calculator functions.
+    """
     result_add = add(5, 5.5)
     result_div = div(10, 3)
     result_mul = mul(3, 3)

@@ -1,3 +1,6 @@
+"""Unit tests for the exercise (teilaufgabe6)."""
+
+
 import pytest
 import os
 
@@ -5,10 +8,13 @@ import os
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
 # Pfad zum zu testenden Skript
-file_path = os.path.join(current_directory, 'teilaufgabe6.py')  # Ersetzen Sie 'IhrSkriptname.py' mit dem Namen Ihrer Datei
+file_path = os.path.join(current_directory, 'teilaufgabe6.py')
 
 def test_import_add_mul_from_calculator():
-    """ Überprüft, ob die Funktionen 'add' und 'mul' aus dem Modul 'calculator' im Paket 'math_operations' importiert werden. """
+    """
+    Überprüft, ob die Funktionen 'add' und 'mul' aus dem Modul 'calculator' im Paket 'math_operations'
+    importiert werden.
+    """
     with open(file_path, 'r') as file:
         contents = file.read()
         assert 'from math_operations.calculator import add, mul' in contents, \

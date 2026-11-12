@@ -5,7 +5,8 @@
     "teilaufgabe2.py",
     "teilaufgabe5.py",
     "teilaufgabe1.py",
-    "teilaufgabe4.py"
+    "teilaufgabe4.py",
+    "math_operations/calculator.py"
   ],
   "ignore": [],
   "max": 5

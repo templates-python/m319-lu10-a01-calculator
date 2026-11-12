@@ -1,3 +1,6 @@
+"""Unit tests for the exercise (teilaufgabe5)."""
+
+
 import os
 
 # Ermitteln des aktuellen Verzeichnispfades
