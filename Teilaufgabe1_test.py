@@ -20,7 +20,7 @@ calc_path = os.path.join(current_directory, 'calc.py')
 
 def test_calc_functions():
     """ Überprüft, ob das Modul 'calc' die Funktionen 'add' und 'mul' enthält. """
-    spec = importlib.util.spec_from_file_location("calc", calc_path)
+    spec = importlib.util.spec_from_file_location('calc', calc_path)
     calc = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(calc)
 

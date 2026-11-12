@@ -19,14 +19,14 @@ def test_import_addition_multiplication_from_calc():
 
 def test_main_output(monkeypatch):
     """ Überprüft, ob die Ausgabe der 'main'-Funktion den erwarteten Werten entspricht. """
-    spec = importlib.util.spec_from_file_location("main_module", file_path)
+    spec = importlib.util.spec_from_file_location('main_module', file_path)
     main_module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(main_module)
 
     # Erstellen eines StringIO-Objekts, um die Ausgabe von print zu erfassen
     from io import StringIO
     captured_output = StringIO()
-    monkeypatch.setattr("sys.stdout", captured_output)
+    monkeypatch.setattr('sys.stdout', captured_output)
 
     # Aufrufen der main-Funktion
     main_module.main()
